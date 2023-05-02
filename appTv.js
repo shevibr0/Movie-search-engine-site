@@ -1,8 +1,13 @@
+import { declareLightBoxEvents } from "./lightbox.js";
 import { declareEvent } from "./tvForm.js";
-import  {doApi} from "./tvList.js" 
+import {doApi} from "./tvList.js"
+
 const init = () => {
-  doApi("lego");
-  declareEvent()
-};
+  doApi("batman");
+  declareEvent();
+  declareLightBoxEvents()
+}
+
+
 
 init();
